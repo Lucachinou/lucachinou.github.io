@@ -1,0 +1,14 @@
+body {
+    background: linear-gradient(45deg, #2e2e2e, #000000);
+}
+
+
+h1 {
+    position: fixed;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(54, 54, 54);
+    backdrop-filter: blur(5);
+    text-align: center;
+}
