@@ -1,10 +1,14 @@
 body {
-    background: linear-gradient(45deg, #007740, #018085);
+    background: linear-gradient(45deg, #2e2e2e, #000000);
 }
 
+
 h1 {
-    color: rgb(223, 223, 223);
+    position: fixed;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(54, 54, 54);
     backdrop-filter: blur(5);
     text-align: center;
-    line-height: 10;
 }
