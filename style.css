@@ -1,14 +1,87 @@
 body {
-    background: linear-gradient(45deg, #2e2e2e, #000000);
+    background: linear-gradient(45deg, #000000ec, #120064ea);
 }
 
 
-h1 {
+.line1 {
     position: fixed;
-    top: 18%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(54, 54, 54);
-    backdrop-filter: blur(5);
-    text-align: center;
+    top: 15%;
+    right: 5%;
+    left: 27%;
+    color: rgba(240, 248, 255, 0.637);
+    font-size: 2.4em;
+}
+
+.line2 {
+    position: fixed;
+    top: 20%;
+    left: 33%;
+    font-size: 1.7em;
+    color: rgba(240, 248, 255, 0.397);
+}
+
+.sanity-tips {
+    color: rgba(240, 248, 255, 0.664);
+    position: fixed;
+    top: 45%;
+    left: 2%;
+    right: 50%;
+    border-top: 2px rgba(136, 136, 136, 0.733) solid;
+    border-right: 2px rgba(136, 136, 136, 0.733) solid;
+    border-bottom: 2px rgba(136, 136, 136, 0.733) solid;
+    border-left: 2px rgba(136, 136, 136, 0.733) solid;
+    border-radius: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+}
+
+.gras {
+    font-weight: bold;
+}
+
+#sanity-title {
+    padding-right: 4px;
+    font-size: 1.7em;
+}
+
+.paremeter {
+    color: rgba(240, 248, 255, 0.664);
+    position: fixed;
+    top: 45%;
+    left: 53%;
+    right: 2%;
+    border-top: 2px rgba(136, 136, 136, 0.733) solid;
+    border-right: 2px rgba(136, 136, 136, 0.733) solid;
+    border-bottom: 2px rgba(136, 136, 136, 0.733) solid;
+    border-left: 2px rgba(136, 136, 136, 0.733) solid;
+    border-radius: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+}
+
+#parameter-title {
+    font-size: 1.7em;
+}
+
+.tips {
+    color: rgba(240, 248, 255, 0.664);
+    position: fixed;
+    top: 75%;
+    left: 2%;
+    right: 50%;
+    border-top: 2px rgba(136, 136, 136, 0.733) solid;
+    border-right: 2px rgba(136, 136, 136, 0.733) solid;
+    border-bottom: 2px rgba(136, 136, 136, 0.733) solid;
+    border-left: 2px rgba(136, 136, 136, 0.733) solid;
+    border-radius: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+}
+
+#fin {
+    position: fixed;
+    top: 150%;
 }
