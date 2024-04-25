@@ -1,0 +1,121 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0">
+    <title>Phasmophobia | Tips</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #000000ec, #120064ea);
+            height: 200%;
+            width: 100%;
+            position: relative;
+            top: -4%;
+            left: -0.5%;
+        }
+
+        .topbar {
+            position: sticky;
+            background-color: rgba(56, 56, 56,0.5);
+            top: 0%;
+            left: 35%;
+            height: 3%;
+            width: 100%;
+            z-index: 2;
+            text-align: center;
+        }
+
+        #mapbtn {
+            position: relative;
+            top: -60%;
+            left: -4%;
+            height: 75%;
+            width: 8%;
+        }
+
+        #unknowbtn {
+            position: relative;
+            top: -60%;
+            left: 3%;
+            height: 75%;
+            width: 8%;
+            cursor: not-allowed;
+            z-index: 1;
+        }
+
+        .sanity-tips, .paremeter,.photo-tips {
+            color: rgba(240, 248, 255, 0.664);
+            position: relative;
+            top: 15%;
+            left: 5%;
+            width: 40%;
+            height: 30%;
+            border-top: 2px rgba(136, 136, 136, 0.733) solid;
+            border-right: 2px rgba(136, 136, 136, 0.733) solid;
+            border-bottom: 2px rgba(136, 136, 136, 0.733) solid;
+            border-left: 2px rgba(136, 136, 136, 0.733) solid;
+            border-radius: 25px;
+            font-weight: normal;
+            padding-left: 8px;
+            font-size: 111%;
+            box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+            float: left; /* Ajout de la propriété float pour les divs */
+            margin-right: 2%; /* Ajout d'une marge à droite pour l'espacement */
+            margin-bottom: 2%;
+            max-height: 18%;
+            line-height: 1.5em;
+            overflow: scroll;
+            box-sizing: content-box;
+        }
+
+        .bold {
+            font-weight: 800;
+        }
+
+        .separator {
+            float: left;
+            position: relative;
+            box-shadow: 6px 6px 25px rgba(44, 44, 44, 0.829);
+        }
+
+        .line1 {
+            text-align: center;
+            margin-top: 2%;
+            z-index: 1;
+        }
+
+        .line2 {
+            text-align: center;
+            margin-bottom: 6%;
+            z-index: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="line1">Bienvenue dans la page d'aide sur Phasmophobia !<br></h1>
+    <h2 class="line2">Cette page peut vous aider à identifier un fantôme</h2>
+    <div class="topbar">
+        <button id="mapbtn">Maps</button>
+        <img src="Phasmophobia.png" height="55" id="topbar" alt="Phasmophobia Logo">
+        <button id="unknowbtn" disabled>Coming soon...</button>
+    </div>
+    <div class="all-tips">
+        <div class="sanity-tips">
+            <h2 id="sanity-title" class="Sanity">Santé Mentale</h2>
+            <p class="S_desc" class="Sanity">À <span class="bold">chaque retour au camion</span> il faut vérifier la <span class="bold">santé mentale de toute l'équipe</span> :<br>
+                <li>Soit vous prévenez la/les personne(s) en dessous de <span class="bold">50%</span> de santé mentale de revenir au camion pour <span class="bold">prendre un médicament</span>.</li> 
+                <li>Soit vous pouvez apporter les médicaments directement à la/les personne(s) qui en ont besoin.</li></p>
+        </div>
+
+        <div class="paremeter">
+            <h2 id="parameter-title" class="Parameter">Paramètres</h2>
+            <p id="P_desc" class="Parameter">Il est conseillé de : <li>Mettre la <span class="bold">luminosité</span> du jeu à <span class="bold">250%</span>.<br></li> <li>Mettre le mode de <span class="bold">reconnaissance vocale</span> en <span class="bold">texte</span>.</li> <li>Mettre le F.O.V (Field Of View) à <span class="bold">75%</span>.</li></p>
+        </div>
+
+        <div class="photo-tips">
+            <h2 id="photo-title" class="Photo">Photo</h2>
+            <p id="photo_desc" class="Photo">Dans <strong>Phasmophobia</strong>, il y'a plusieurs type de photos, comme les <span class="bold">intéractions</span> qui peuvent se prendre en photos lorsque le <span class="bold">fantôme</span> touche un <span class="bold">objet, la télévision, un intérupteur et la douche</span> il y'a aussi la photo du <span class="bold">fantôme</span> qui peu être prise a <span class="bold">n'importe quel évenement pu importe la forme du fantôme</span>. Pour prendre a chaque fois une photo 3 étoiles il faut se rapprocher le plus possible.</p>
+        </div>
+    </div>
+</body>
+</html>
