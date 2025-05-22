@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="src/assets/Memojis.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucachinou</title>
+  </head>
+  <style>
+
+    @font-face {
+        font-family: 'San Francisco';
+        src: url('src/assets/Fonts/SF-Pro.ttf') format('truetype'),
+            url('src/assets/Fonts/SF-Pro-Text-Bold.otf') format('opentype');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'San Francisco';
+        src: url('src/assets/Fonts/SF-Pro.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @keyframes MoveGithub {
+      0% {
+        transform: translate(-0%, -0%)
+      } 100% {
+        transform: translate(-10%, -5%)
+      }
+    }
+
+    @keyframes MoveDiscord {
+      0% {
+        transform: translate(-0%, -0%)
+      } 100% {
+        transform: translate(-5%, 3%)
+      }
+    }
+
+    @keyframes MoveYouTube {
+      0% {
+        transform: translate(-0%, -0%)
+      } 100% {
+        transform: translate(-3%, -4%)
+      }
+    }
+
+    @keyframes MoveTwitch {
+      0% {
+        transform: translate(-0%, -0%)
+      } 100% {
+        transform: translate(-3%, 2%)
+      }
+    }
+
+    body {
+      background-color: black;
+    }
+
+    .SocialCloud {
+      display: flex;
+      margin-top: 75px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+
+    #Github {
+      position: absolute;
+      top: 20px;
+      margin-right: 145px;
+      border-radius: 80px;
+      user-select: none;
+      animation: MoveGithub 5s infinite alternate ease;
+    }
+
+    #Github img {
+      border-radius: 80px;
+    }
+
+    #Discord {
+      position: absolute;
+      top: 150px;
+      margin-right: 165px;
+      border-radius: 80px;
+      user-select: none;
+      animation: MoveDiscord 3.5s infinite alternate ease;
+    }
+
+    #Discord img {
+      border-radius: 80px;
+    }
+
+    #Youtube {
+      position: absolute;
+      top: 190px;
+      margin-left: 100px;
+      border-radius: 80px;
+      user-select: none;
+      animation: MoveYouTube 4.5s infinite alternate ease
+    }
+
+    #YouTube img {
+      border-radius: 80px;
+    }
+
+    #Twitch {
+      position: absolute;
+      top: 45px;
+      margin-left: 180px;
+      border-radius: 80px;
+      user-select: none;
+      animation: MoveTwitch 5.5s infinite alternate ease
+    }
+
+    #Twitch img {
+      border-radius: 80px;
+    }
+
+    #Memojis {
+      user-select: none;
+    }
+
+    .Presentation {
+      display: flex;
+      flex-direction: column;
+      margin-top: 75px;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+    }
+
+    #Username {
+      font-family: 'San Francisco';
+      font-weight: bold;
+      color: #FFFFFF;
+      font-size: 5em;
+      margin-bottom: 0px;
+      transition: font-size, 0.2s ease-in-out;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    #MoreInfos {
+      font-family: 'San Francisco'; 
+      color: #ffffff88;
+      margin-top: 0px;
+    }
+
+    .BentoInformationsProjects {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: 100%;
+      transition: width, 0.2s ease-in-out
+    }
+
+    .BentoInformationsSkills {
+      display: flex;
+      gap: 15px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: 100%;
+      transition: width, 0.2s ease-in-out
+    }
+
+    .BentoBox1 {
+      color: #FFFFFF;
+      padding-left: 2px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-right: 2px;
+      background: linear-gradient(140deg, rgba(167, 167, 167, 0.2), rgba(0, 0, 0, 0));
+      border-radius: 25px;
+      min-width: 125px;
+      min-height: 125px;
+      transition: width, 0.2s ease-in-out
+    }
+
+    .BentoBox1-Content {
+      display: flex;
+      word-wrap: break-word;
+      font-family: 'San Francisco'; 
+      background-color: black;
+      padding-bottom: 10px;
+      border-radius: 25px;
+      min-width: 300px;
+      min-height: 125px;
+      justify-content: center;
+      align-items: center;
+      transition: width, 0.2s ease-in-out
+    }
+
+    .BentoBox2 {
+      color: #FFFFFF;
+      padding-left: 2px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-right: 2px;
+      background: linear-gradient(140deg, rgba(167, 167, 167, 0.2), rgba(0, 0, 0, 0));
+      border-radius: 25px;
+      min-width: 125px;
+      min-height: 125px;
+      transition: width, 0.2s ease-in-out
+    }
+
+    .BentoBox2-Content {
+      display: flex;
+      word-wrap: break-word;
+      font-family: 'San Francisco'; 
+      background-color: black;
+      padding-bottom: 10px;
+      border-radius: 25px;
+      min-width: 140px;
+      min-height: 125px;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: width, 0.2s ease-in-out
+      
+    }
+
+    .BentoBox2-Content img {
+        position: relative;
+        top: 60px;
+        left: 25%;
+        z-index: 1;
+        margin-top: 0px;
+      }
+
+    .BentoBox3 {
+      color: #FFFFFF;
+      padding-left: 2px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-right: 2px;
+      background: linear-gradient(140deg, rgba(167, 167, 167, 0.2), rgba(0, 0, 0, 0));
+      border-radius: 25px;
+      min-width: 125px;
+      min-height: 125px;
+      transition: width, 0.2s ease-in-out
+    }
+
+    .BentoBox3-Content {
+      display: flex;
+      word-wrap: break-word;
+      font-family: 'San Francisco'; 
+      background-color: black;
+      padding-bottom: 10px;
+      border-radius: 25px;
+      min-width: 125px;
+      min-height: 125px;
+      justify-content: center;
+      align-items: center;
+      transition: width, 0.2s ease-in-out
+    }
+
+    .BentoBox4 {
+      color: #FFFFFF;
+      padding-left: 2px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-right: 2px;
+      background: linear-gradient(140deg, rgba(167, 167, 167, 0.2), rgba(0, 0, 0, 0));
+      border-radius: 25px;
+      min-width: 125px;
+      min-height: 125px;
+      transition: width, 0.2s ease-in-out
+    }
+
+    .BentoBox4-Content {
+      display: flex;
+      word-wrap: break-word;
+      font-family: 'San Francisco'; 
+      background-color: black;
+      padding-bottom: 10px;
+      border-radius: 25px;
+      min-width: 300px;
+      min-height: 125px;
+      justify-content: center;
+      align-items: center;
+      transition: width, 0.2s ease-in-out
+    }
+
+    @media (max-width: 500px) {
+      #Username {
+        font-size: 3em;
+      }
+      .BentoInformationsProjects {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+      }
+
+      .BentoInformationsSkills {
+        display: flex;
+        gap: 5px;
+        margin-top: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+      }
+
+      .BentoBox1 {
+        color: #FFFFFF;
+        padding-left: 2px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 2px;
+        background: linear-gradient(140deg, rgba(167, 167, 167, 0.2), rgba(0, 0, 0, 0));
+        font-size: 0.7em;
+        border-radius: 25px;
+        min-width: 62px;
+        min-height: 62px;
+      }
+
+      .BentoBox1-Content {
+        display: flex;
+        word-wrap: break-word;
+        font-family: 'San Francisco'; 
+        background-color: black;
+        padding-bottom: 10px;
+        border-radius: 25px;
+        min-width: 150px;
+        min-height: 62px;
+        font-size: 0.7em;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .BentoBox2 {
+        color: #FFFFFF;
+        padding-left: 2px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 2px;
+        background: linear-gradient(140deg, rgba(167, 167, 167, 0.2), rgba(0, 0, 0, 0));
+        font-size: 0.7em;
+        border-radius: 25px;
+        min-width: 62px;
+        min-height: 62px;
+      }
+
+      .BentoBox2-Content {
+        display: flex;
+        word-wrap: break-word;
+        font-family: 'San Francisco'; 
+        background-color: black;
+        padding-bottom: 10px;
+        border-radius: 25px;
+        min-width: 70px;
+        min-height: 62px;
+        font-size: 0.7em;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .BentoBox3 {
+        color: #FFFFFF;
+        padding-left: 2px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 2px;
+        background: linear-gradient(140deg, rgba(167, 167, 167, 0.2), rgba(0, 0, 0, 0));
+        font-size: 0.7em;
+        border-radius: 25px;
+        min-width: 62px;
+        min-height: 62px;
+      }
+
+      .BentoBox3-Content {
+        display: flex;
+        word-wrap: break-word;
+        font-family: 'San Francisco'; 
+        background-color: black;
+        padding-bottom: 10px;
+        border-radius: 25px;
+        min-width: 62px;
+        min-height: 62px;
+        font-size: 0.7em;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .BentoBox4 {
+        color: #FFFFFF;
+        padding-left: 2px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 2px;
+        background: linear-gradient(140deg, rgba(167, 167, 167, 0.2), rgba(0, 0, 0, 0));
+        font-size: 0.7em;
+        border-radius: 25px;
+        min-width: 62px;
+        min-height: 62px;
+      }
+
+      .BentoBox4-Content {
+        display: flex;
+        word-wrap: break-word;
+        font-family: 'San Francisco'; 
+        background-color: black;
+        padding-bottom: 10px;
+        border-radius: 25px;
+        max-width: 150px;
+        min-height: 62px;
+        font-size: 0.7em;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+  </style>
+  <body>
+    <div class="SocialCloud">
+      <a id="Github" href="https://github.com/Lucachinou" target="_blank"><img src="src/assets/Github.svg" alt="My Github" width="100" height="100"></a>
+      <a id="Twitch" href="https://www.twitch.tv/lucachinou" target="_blank"><img src="src/assets/Twitch.svg" alt="My Twitch" width="100" height="100"></a>
+      <a id="Youtube" href="https://www.youtube.com/@lucachinou" target="_blank"><img src="src/assets/YouTube.svg" alt="My Youtube" width="100" height="100"></a>
+      <img id="Memojis" src="src/assets/Memojis.svg" alt="Memojis" draggable="false" width="150" height="150">
+      <a id="Discord" href="https://discord.gg/G8q8cGyX42" target="_blank"><img src="src/assets/Discord.svg" alt="My Discord" width="100" height="100"></a>
+    </div>
+
+    <div class="Presentation">
+      <h1 id="Username">Lucachinou</h1>
+      <p id="MoreInfos">Luca<span style="user-select: none;"> • </span>16 ans</p>
+    </div>
+<!--
+
+    <div class="BentoInformationsProjects">
+      <div class="BentoBox1">
+          <div class="BentoBox1-Content">
+            <img style="user-select: none;" src="src/assets/KaleronSimpleDark.png" alt="" width="100" height="100" draggable="false">
+          </div>
+      </div>
+      <div class="BentoBox2">
+          <div class="BentoBox2-Content">
+            <img id="earthIcon" src="" alt="">
+            <p>Mes Projets</p>
+          </div>
+      </div>
+    </div>
+    <div class="BentoInformationsSkills">
+          <div class="BentoBox3">
+            <div class="BentoBox3-Content">
+              <img src="" alt="">
+              <p>Mes Compétences</p>
+            </div>
+          </div>
+          <div class="BentoBox4">
+            <div class="BentoBox4-Content">
+              <img src="" alt="">
+              <p>Python  |  HTML & CSS  |  Lua  |  Java </p>
+          </div>
+        </div>
+    </div>
+    -->
+
+  </body>
+</html>
