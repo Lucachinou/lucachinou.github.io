@@ -56,7 +56,7 @@
     }
 
     body {
-      background-color: black;
+      background-color: rgb(117, 117, 117);
     }
 
     .SocialCloud {
@@ -198,6 +198,12 @@
       transition: width, 0.2s ease-in-out
     }
 
+      .BentoBox1-Content img {
+        width: 100px;
+        height: 100px;
+        transition: width, 0.2s ease-in-out;
+      }
+
     .BentoBox2 {
       color: #FFFFFF;
       padding-left: 2px;
@@ -208,10 +214,12 @@
       border-radius: 25px;
       min-width: 125px;
       min-height: 125px;
+      overflow: hidden;
       transition: width, 0.2s ease-in-out
     }
 
     .BentoBox2-Content {
+      position: relative;
       display: flex;
       word-wrap: break-word;
       font-family: 'San Francisco'; 
@@ -223,16 +231,17 @@
       justify-content: center;
       align-items: center;
       overflow: hidden;
-      transition: width, 0.2s ease-in-out
+      transition: width, 0.2s ease-in-out;
       
     }
 
     .BentoBox2-Content img {
-        position: relative;
-        top: 60px;
-        left: 25%;
+        position: absolute;
+        width: 100px;
+        height: 100px;
         z-index: 1;
-        margin-top: 0px;
+        margin-top: 120px;
+        transition: margin-top, 0.2s ease-in-out;
       }
 
     .BentoBox3 {
@@ -245,10 +254,11 @@
       border-radius: 25px;
       min-width: 125px;
       min-height: 125px;
-      transition: width, 0.2s ease-in-out
+      transition: width, 0.2s ease-in-out;
     }
 
     .BentoBox3-Content {
+      position: relative;
       display: flex;
       word-wrap: break-word;
       font-family: 'San Francisco'; 
@@ -259,7 +269,23 @@
       min-height: 125px;
       justify-content: center;
       align-items: center;
-      transition: width, 0.2s ease-in-out
+      overflow: hidden;
+      transition: width, 0.2s ease-in-out;
+      transition: font-size, 0.2s ease-in-out;
+    }
+
+    .BentoBox3-Content img {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      z-index: 1;
+      margin-top: 75px;
+      transform: width 0.2s ease-in-out;
+      transition: margin-top, 0.2s ease-in-out;
+    }
+
+    #SkillsParagraphe {
+      margin-bottom: 40px;
     }
 
     .BentoBox4 {
@@ -323,8 +349,8 @@
         background: linear-gradient(140deg, rgba(167, 167, 167, 0.2), rgba(0, 0, 0, 0));
         font-size: 0.7em;
         border-radius: 25px;
-        min-width: 62px;
-        min-height: 62px;
+        min-width: 80px;
+        min-height: 30px;
       }
 
       .BentoBox1-Content {
@@ -334,11 +360,16 @@
         background-color: black;
         padding-bottom: 10px;
         border-radius: 25px;
-        min-width: 150px;
-        min-height: 62px;
+        min-width: 200px;
+        min-height: 30px;
         font-size: 0.7em;
         justify-content: center;
         align-items: center;
+      }
+
+      .BentoBox1-Content img {
+        width: 50px;
+        height: 50px;
       }
 
       .BentoBox2 {
@@ -351,7 +382,7 @@
         font-size: 0.7em;
         border-radius: 25px;
         min-width: 62px;
-        min-height: 62px;
+        min-height: 50px;
       }
 
       .BentoBox2-Content {
@@ -362,10 +393,16 @@
         padding-bottom: 10px;
         border-radius: 25px;
         min-width: 70px;
-        min-height: 62px;
+        min-height: 50px;
         font-size: 0.7em;
         justify-content: center;
         align-items: center;
+      }
+
+      .BentoBox2-Content img {
+        margin-top: 75px;
+        width: 50px;
+        height: 50px;
       }
 
       .BentoBox3 {
@@ -388,14 +425,148 @@
         background-color: black;
         padding-bottom: 10px;
         border-radius: 25px;
-        min-width: 62px;
-        min-height: 62px;
+        min-width: 70px;
+        min-height: 50px;
+        font-size: 0.8em;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .BentoBox3-Content img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        margin-top: 35px;
+      }
+
+      #SkillsParagraphe {
+        margin-bottom: 30px;
+        font-size: 0.7em;
+      }
+
+      .BentoBox4 {
+        color: #FFFFFF;
+        padding-left: 2px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 2px;
+        background: linear-gradient(140deg, rgba(167, 167, 167, 0.2), rgba(0, 0, 0, 0));
+        font-size: 0.7em;
+        border-radius: 25px;
+        min-width: 30px;
+        min-height: 30px;
+      }
+
+      .BentoBox4-Content {
+        display: flex;
+        word-wrap: break-word;
+        font-family: 'San Francisco'; 
+        background-color: black;
+        padding-bottom: 10px;
+        border-radius: 25px;
+        min-width: 200px;
+        min-height: 50px;
+        font-size: 0.7em;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 299px) {
+      #Username {
+        font-size: 3em;
+      }
+      .BentoInformationsProjects {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+      }
+
+      .BentoInformationsSkills {
+        display: flex;
+        gap: 5px;
+        margin-top: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+      }
+
+      .BentoBox1 {
+        display: none;
+        color: #FFFFFF;
+        padding-left: 2px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 2px;
+        background: linear-gradient(140deg, rgba(167, 167, 167, 0.2), rgba(0, 0, 0, 0));
+        font-size: 0.7em;
+        border-radius: 25px;
+        min-width: 80px;
+        min-height: 30px;
+      }
+
+      .BentoBox1-Content {
+        display: none;
+        word-wrap: break-word;
+        font-family: 'San Francisco'; 
+        background-color: black;
+        padding-bottom: 10px;
+        border-radius: 25px;
+        min-width: 200px;
+        min-height: 30px;
         font-size: 0.7em;
         justify-content: center;
         align-items: center;
       }
 
-      .BentoBox4 {
+      .BentoBox1-Content img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .BentoBox2 {
+        display: none;
+        color: #FFFFFF;
+        padding-left: 2px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 2px;
+        background: linear-gradient(140deg, rgba(167, 167, 167, 0.2), rgba(0, 0, 0, 0));
+        font-size: 0.7em;
+        border-radius: 25px;
+        min-width: 62px;
+        min-height: 50px;
+      }
+
+      .BentoBox2-Content {
+        display: none;
+        word-wrap: break-word;
+        font-family: 'San Francisco'; 
+        background-color: black;
+        padding-bottom: 10px;
+        border-radius: 25px;
+        min-width: 70px;
+        min-height: 50px;
+        font-size: 0.7em;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .BentoBox2-Content img {
+        margin-top: 75px;
+        width: 50px;
+        height: 50px;
+      }
+
+      .BentoBox3 {
+        display: none;
         color: #FFFFFF;
         padding-left: 2px;
         padding-top: 2px;
@@ -408,15 +579,56 @@
         min-height: 62px;
       }
 
-      .BentoBox4-Content {
-        display: flex;
+      .BentoBox3-Content {
+        display: none;
         word-wrap: break-word;
         font-family: 'San Francisco'; 
         background-color: black;
         padding-bottom: 10px;
         border-radius: 25px;
-        max-width: 150px;
-        min-height: 62px;
+        min-width: 70px;
+        min-height: 50px;
+        font-size: 0.8em;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .BentoBox3-Content img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        margin-top: 35px;
+      }
+
+      #SkillsParagraphe {
+        margin-bottom: 30px;
+        font-size: 0.7em;
+      }
+
+      .BentoBox4 {
+        display: none;
+        color: #FFFFFF;
+        padding-left: 2px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 2px;
+        background: linear-gradient(140deg, rgba(167, 167, 167, 0.2), rgba(0, 0, 0, 0));
+        font-size: 0.7em;
+        border-radius: 25px;
+        min-width: 30px;
+        min-height: 30px;
+      }
+
+      .BentoBox4-Content {
+        display: none;
+        word-wrap: break-word;
+        font-family: 'San Francisco'; 
+        background-color: black;
+        padding-bottom: 10px;
+        border-radius: 25px;
+        min-width: 200px;
+        min-height: 50px;
         font-size: 0.7em;
         justify-content: center;
         align-items: center;
@@ -435,9 +647,8 @@
 
     <div class="Presentation">
       <h1 id="Username">Lucachinou</h1>
-      <p id="MoreInfos">Luca<span style="user-select: none;"> • </span>16 ans</p>
+      <p id="MoreInfos">Luca<span style="user-select: none; -webkit-user-select: none;"> • </span>16 ans</p>
     </div>
-<!--
 
     <div class="BentoInformationsProjects">
       <div class="BentoBox1">
@@ -447,16 +658,16 @@
       </div>
       <div class="BentoBox2">
           <div class="BentoBox2-Content">
-            <img id="earthIcon" src="" alt="">
-            <p>Mes Projets</p>
+            <img id="earthIcon" src="src/assets/Earth.svg" alt="My Projects">
+            <p style="font-family: 'San Francisco'; margin-top: 5px;">Mes Projets</p>
           </div>
       </div>
     </div>
     <div class="BentoInformationsSkills">
           <div class="BentoBox3">
             <div class="BentoBox3-Content">
-              <img src="" alt="">
-              <p>Mes Compétences</p>
+              <img id="LeaderboardIcon" src="src/assets/Leaderboard.svg" alt="My Skills">
+              <p id="SkillsParagraphe" >Mes Compétences</p>
             </div>
           </div>
           <div class="BentoBox4">
@@ -466,7 +677,5 @@
           </div>
         </div>
     </div>
-    -->
-
   </body>
 </html>
