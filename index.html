@@ -178,8 +178,9 @@
     }
 
     .SkillsContainer {
-      display: flex;
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      align-self: center;
       align-items: center;
       justify-content: center;
       align-content: center;
@@ -208,6 +209,17 @@
       height: 50px;
     }
 
+    .JavaScriptSkill {
+      display: flex;
+      background-color: #1b1b1650;
+      border: 1px solid;
+      border-radius: 10px;
+      border-color: #35333375;
+      backdrop-filter: blur(50px);
+      width: 225px;
+      height: 50px;
+    }
+
     #JavaSkillImage {
       user-select: none;
       -webkit-user-select: none;
@@ -219,6 +231,24 @@
     }
 
     #JavaSkillImage:hover {
+      user-select: none;
+      -webkit-user-select: none;
+      align-self: flex-end;
+      filter: saturate(100.0%);
+      transition: filter 0.3s ease-in-out;
+    }
+
+    #JavaScriptSkillImage {
+      user-select: none;
+      -webkit-user-select: none;
+      margin-bottom: 5px;
+      margin-left: 5px;
+      align-self: flex-end;
+      filter: saturate(0.0%);
+      transition: filter 0.3s ease-in-out;
+    }
+
+    #JavaScriptSkillImage:hover {
       user-select: none;
       -webkit-user-select: none;
       align-self: flex-end;
@@ -254,6 +284,13 @@
     }
 
     #PythonSkillSentence {
+      font-family: 'San Francisco';
+      color: #ffffff50;
+      margin-left: 10px;
+      align-self:flex-end;
+    }
+
+    #JavaScriptSkillSentence {
       font-family: 'San Francisco';
       color: #ffffff50;
       margin-left: 10px;
@@ -324,8 +361,13 @@
           <!--<div id="PythonSkill-Separator"></div>-->
         </div>
         <div class="JavaSkill">
-          <img id="JavaSkillImage" src="src/assets/Java.png" alt="Python" width="40" height="40" draggable="false">
+          <img id="JavaSkillImage" src="src/assets/Java.png" alt="Java" width="40" height="40" draggable="false">
           <p id="JavaSkillSentence">Minecraft - Bot</p>
+          <!--<div id="PythonSkill-Separator"></div>-->
+        </div>
+        <div class="JavaScriptSkill">
+          <img id="JavaScriptSkillImage" src="src/assets/JavaScript.png" alt="JavaScript" width="40" height="40" draggable="false">
+          <p id="JavaScriptSkillSentence">Site</p>
           <!--<div id="PythonSkill-Separator"></div>-->
         </div>
       </div>
