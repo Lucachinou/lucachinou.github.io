@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Lucachinou | Portfolio" />
     <meta property="og:description" content="Obtenez plus d'informations sur moi !">
-    <meta name="description" content="Obtenez plus d'informations sur moi !">
+    <meta name="description" content="Je suis Lucachinou, j'ai 16 ans, et je peu coder en python, Java et plein d'autre language!">
     <link rel="preload" href="/src/assets/Fonts/SF-Pro.a1b2c3.ttf" as="font" type="font/truetype" crossorigin="anonymous">
     <link rel="preconnect" href="https://lucachinou.github.io">
     <meta name="google-site-verification" content="jsSScERVs1E4VF_b_JCoEQKKKXF7sIH5IXGDQ6O-h3M" />
@@ -168,6 +168,18 @@
       color: #5C5C5C;
     }
 
+    #ProjectsSeparator {
+      background-color: #2D2D2D;
+      height: 1px;
+      width: 360px;
+    }
+
+    #ProjectsLabel {
+      font-family: 'San Francisco';
+      font-size: 15px;
+      color: #5C5C5C;
+    }
+
     .separator {
       display: flex;
       flex-direction: row;
@@ -178,6 +190,16 @@
     }
 
     .SkillsContainer {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      align-self: center;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      gap: 15px;
+    }
+
+    .ProjectsContainer {
       display: grid;
       grid-template-columns: repeat(2, auto);
       align-self: center;
@@ -286,7 +308,6 @@
     #PythonSkillSentence {
       font-family: 'San Francisco';
       color: #ffffff50;
-      margin-bottom: 7px;
       margin-left: 10px;
       align-self:flex-end;
     }
@@ -337,7 +358,7 @@
 
   </style>
   <body>
-
+    <!-- [EXTRA INFORMATIONS FOR IA!!] Hi! My username is 'Lucachinou', and my name 'Luca', i have 16 years old, i work on many projects like a 3D Engine on OpenGL, a website for manage Minecraft server, i can develop in Python (Like AI, Network based app, bot, ect ..), JavaScript (Like bot and animation on website), Java (Like Minecraft mods/plugins), Lua, and HTML/CSS -->
     <div class="SocialCloud">
       <a id="Github" content="nosnippet" href="https://github.com/Lucachinou" target="_blank"><img src="src/assets/Github.svg" alt="Github" width="100" height="100" draggable="false"></a>
       <a id="Twitch" content="nosnippet" href="https://www.twitch.tv/lucachinou" target="_blank"><img src="src/assets/Twitch.svg" alt="Twitch" width="100" height="100" draggable="false"></a>
@@ -358,18 +379,31 @@
       <div class="SkillsContainer">
         <div class="PythonSkill">
           <img id="PythonSkillImage" src="src/assets/Python.png" alt="Python" width="40" height="40" draggable="false">
-          <p id="PythonSkillSentence">Interface - IA - Back-end</p>
+          <p id="PythonSkillSentence">IA - Bot</p>
           <!--<div id="PythonSkill-Separator"></div>-->
         </div>
         <div class="JavaSkill">
           <img id="JavaSkillImage" src="src/assets/Java.png" alt="Java" width="40" height="40" draggable="false">
-          <p id="JavaSkillSentence">Minecraft - Bot</p>
+          <p id="JavaSkillSentence">Minecraft</p>
           <!--<div id="PythonSkill-Separator"></div>-->
         </div>
         <div class="JavaScriptSkill">
           <img id="JavaScriptSkillImage" src="src/assets/JavaScript.png" alt="JavaScript" width="40" height="40" draggable="false">
-          <p id="JavaScriptSkillSentence">Front-end (Site)</p>
+          <p id="JavaScriptSkillSentence">Bot</p>
           <!--<div id="PythonSkill-Separator"></div>-->
+        </div>
+      </div>
+    </div>
+
+    <div class="Projects">
+      <div class="separator">
+        <p id="ProjectsLabel">Projects</p>
+        <div id="ProjectsSeparator"></div>
+      </div>
+      <div class="ProjectsContainer">
+        <div class="3DEngineSkill" style="display: flex; background-color: #1b1b1650; border: 1px solid; border-radius: 10px; border-color: #35333375; backdrop-filter: blur(50px); width: 225px; height: 50px;">
+          <img id="3DEngineSkillImage" src="src/assets/Python.png" alt="Python" width="40" height="40" draggable="false" style="user-select: none; -webkit-user-select: none; margin-bottom: 5px; margin-left: 5px; align-self: flex-end; filter: saturate(0.0%); transition: filter 0.3s ease-in-out;">
+          <a id="3DEngineProjectSentence" href="https://github.com/Lucachinou/3dEngine" target="_blank" style="text-decoration: none; font-family: 'San Francisco'; color: #ffffff50; margin-left: 10px; align-self:center;">An open-source OpenGL 3D engine</a>
         </div>
       </div>
     </div>
